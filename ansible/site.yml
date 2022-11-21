@@ -1,7 +1,7 @@
 - hosts: servers
   roles:
+    - admin_user
     - apt_common_tools
     - hostname
     - firewall
     - journald
-    - admin_user
