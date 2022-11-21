@@ -1,5 +1,6 @@
 PRs should be tested by:
+- Follow one-time steps to install vagrant (~5min)
 - launch a vagrant instance
 - run deployments against the vagrant instance
 
-NB: it's not very difficult to have vagrant set up, and once setup it's a game changer.
+See README.md for more.
