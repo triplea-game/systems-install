@@ -1,17 +1,26 @@
 # systems-installs
 
-Common linux setup for any server/system that we manage. This repository
-represents 'infrastructure as code' and changes to this code will be
-executed against production after each merge.
+Installs linux system configuration to production servers after every merge to master.
+System configuration is limited to what is common for all servers (applications are
+not deployed).
 
-## Common Server Setup here and just the common server setup
-
-We do not seek to configure the full system here, just common elements to get
-a server ready for further customization. 
-
-## Things to install as common setup
+## Items that are insalled
 
 - admin users (grants server access)
 - security configurations
 - OS level details, like security, common logging configs, unattended upgrades, etc..
 
+## Testing locally
+
+Launch a local vagrant server (a VM), use this as a target for the server setup deployment code.
+
+```
+cd ./vagrant/
+vagrant up
+./run_ansible --env vagrant`
+```
+
+Validate installation:
+```
+vagrant ssh
+```
