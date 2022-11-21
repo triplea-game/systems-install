@@ -1,0 +1,8 @@
+vagrant/.vagrant
+.ansible
+*.retry
+**/*.jar
+**/*.zip
+vault_password
+secret
+
