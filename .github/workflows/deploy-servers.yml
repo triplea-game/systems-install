@@ -20,6 +20,4 @@ jobs:
       - name: Run Ansible to Deploy
         run: |
           pip install ansible==2.9.13
-          cd infrastructure
           ./run_ansible --environment production
-
