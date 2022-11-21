@@ -99,7 +99,7 @@ fi
 
 # Run deployment
 set -x
-ANSIBLE_CONFIG="$scriptDir/ansible.cfg" ansible-playbook \
+ANSIBLE_CONFIG="$scriptDir/ansible/ansible.cfg" ansible-playbook \
    --inventory "$scriptDir/ansible/inventory/$ENVIRONMENT" $DRY_RUN_ARG $LIMIT_ARG \
    $TAGS_ARG $DIFF_ARG $VERBOSE_ARG "$scriptDir/ansible/site.yml"
 set +x
